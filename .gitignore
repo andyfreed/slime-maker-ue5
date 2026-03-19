@@ -1,0 +1,22 @@
+# UE5 build artifacts
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+Build/
+
+# IDE
+.vs/
+.vscode/
+*.sln
+*.xcworkspace
+*.xcodeproj
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled assets
+*.uasset
+*.umap
+!Content/Maps/.gitkeep

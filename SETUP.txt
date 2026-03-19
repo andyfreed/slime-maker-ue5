@@ -1,0 +1,56 @@
+SLIME MAKER - UE5 SETUP GUIDE
+==============================
+
+QUICK START (5 minutes):
+
+1. Install Unreal Engine 5.5 via Epic Games Launcher
+   - Open Epic Games Launcher
+   - Go to "Unreal Engine" tab
+   - Click "Install Engine" and select 5.5
+
+2. Double-click SlimeMaker.uproject
+   - It will ask to compile — click Yes
+   - Wait for it to build (first time takes a few minutes)
+
+3. Create the level:
+   - File > New Level > Empty Level
+   - File > Save Current Level As > Content/Maps/SlimePlayground
+   - That's it — the GameMode auto-spawns everything else
+
+4. Hit Play (green button or Cmd+P)
+   - Camera, lights, floor, slime all spawn automatically
+   - Click the slime to poke it
+   - Click the buttons at the bottom: SQUISH, STRETCH, BOUNCE, MORPH
+   - Build energy to 100% to unlock Mega Morph
+
+DEPLOY TO iPHONE:
+
+1. Make sure Xcode is installed (from Mac App Store)
+
+2. In UE5 Editor:
+   - Edit > Project Settings > Platforms > iOS
+   - Set Bundle Identifier (e.g., com.yourname.slimemaker)
+   - Set Signing Team to your Apple Developer account
+   - Under "Provision", select your provisioning profile
+
+3. Plug in your iPhone via USB, trust the computer
+
+4. In the toolbar:
+   - Click the platform dropdown (next to Play)
+   - Select "iOS"
+   - Click "Launch" (rocket icon)
+
+5. First build takes 10-15 minutes. After that, iterations are faster.
+
+CONTROLS:
+- Tap/Click slime = Poke
+- Drag on slime = Deform
+- Bottom buttons = Squish / Stretch / Bounce / Mega Morph
+- Keyboard (editor only): 1=Squish, 2=Stretch, 3=Bounce, Space=Mega Morph
+
+GAMEPLAY:
+- Energy builds from 0-100% through interactions
+- Combos: rapid interactions within 1.7s multiply energy gain
+- Moods change with energy: Chill > Happy > Playful > Hyper > LEGENDARY
+- At 100% energy: Mega Morph explodes the slime and earns 5 coins
+- The slime wobbles more as it gets more energetic
